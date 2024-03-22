@@ -11,7 +11,19 @@ export
     browse,
     activate,
     deactivate,
-    isactivated
+    isactivated,
+    trigger_mode,
+    trigger_mode!,
+    delay,
+    delay!,
+    framerate,
+    framerate!,
+    exposure,
+    exposure!,
+    buffer_mode,
+    buffer_mode!,
+    buffer_size,
+    buffer_size!
 
 include("definition.jl")
 

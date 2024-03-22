@@ -47,3 +47,23 @@ Determine whether an stream is not yet activated.
 
 """
 function isactivated end
+
+# list of general fucntions before activation
+# Those functions might not implemented
+# You can make your own functions
+
+# timing - at triggering time
+function trigger_mode end
+function trigger_mode! end
+function delay end
+function delay! end
+# timting - at action time
+function framerate end
+function framerate! end
+function exposure end
+function exposure! end
+# intermediate data storage - buffer
+function buffer_mode end
+function buffer_mode! end
+function buffer_size end
+function buffer_size! end
