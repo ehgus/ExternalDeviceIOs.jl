@@ -3,7 +3,7 @@
 
 Name of I/O device.
 """
-struct IODeviceName end
+abstract type IODeviceName end
 
 """
     browse(IODeviceName) -> IODeviceName
