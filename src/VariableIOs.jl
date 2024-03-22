@@ -26,5 +26,6 @@ export
     buffer_size!
 
 include("definition.jl")
+include("definition_arrayIO.jl")
 
 end # module VariableIOs
