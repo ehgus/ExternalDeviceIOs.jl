@@ -67,3 +67,10 @@ function buffer_mode end
 function buffer_mode! end
 function buffer_size end
 function buffer_size! end
+
+# list of general fucntions while activation
+# Those functions might not implemented
+# You can make your own functions
+
+# timing - at triggering time
+function trigger end

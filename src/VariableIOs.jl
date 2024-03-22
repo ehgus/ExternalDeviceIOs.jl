@@ -23,7 +23,8 @@ export
     buffer_mode,
     buffer_mode!,
     buffer_size,
-    buffer_size!
+    buffer_size!,
+    trigger
 
 include("definition.jl")
 include("definition_arrayIO.jl")
