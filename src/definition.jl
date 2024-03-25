@@ -70,18 +70,12 @@ end
 # timing - at triggering time
 function trigger_mode end
 function trigger_mode! end
-function delay end
-function delay! end
 # timting - at action time
-function framerate end
-function framerate! end
-function exposure end
-function exposure! end
+function timing_mode end
+function timing_mode! end
 # intermediate data storage - buffer
 function buffer_mode end
 function buffer_mode! end
-function buffer_size end
-function buffer_size! end
 
 # list of general fucntions while activation
 # Those functions might not implemented

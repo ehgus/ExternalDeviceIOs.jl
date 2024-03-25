@@ -12,18 +12,14 @@ export
     activate,
     deactivate,
     isactivated,
+    # before activation
     trigger_mode,
     trigger_mode!,
-    delay,
-    delay!,
-    framerate,
-    framerate!,
-    exposure,
-    exposure!,
+    timing_mode,
+    timing_mode!,
     buffer_mode,
     buffer_mode!,
-    buffer_size,
-    buffer_size!,
+    # while activated
     trigger
 
 include("definition.jl")
