@@ -1,4 +1,4 @@
-# VariableIOs
+# ExternalDeviceIOs
 
 An **experimental** definition for explicitly controllable I/O device.
 
@@ -16,7 +16,7 @@ flowchart LR
     C["I/O stream (usable)"];
 ```
 
-Variable IO will basically support
+ExternalDevice IO will basically support
  - The definition of "name" of I/O devices and function `browse` to list available devices.
  - functions `open`, `close`, and `isopen`
  - functions `activate`,`deactivate`, and `isactivated`.

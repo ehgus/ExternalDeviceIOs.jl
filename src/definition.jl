@@ -1,40 +1,26 @@
 """
-    IODeviceName
+    ExternalDeviceName
 
 Name of I/O device.
 """
-abstract type IODeviceName end
+abstract type ExternalDeviceName end
 
 """
-    browse(IODeviceName) -> IODeviceName
+    ExternalDeviceIOStream
 
-List available IO devices.
+IOStream for ExternalDeviceIO.
 """
-function browse end
-
-"""
-    VariableIO
-
-Type of IO which its results of input/output operations are controllable.
-"""
-abstract type VariableIO <: IO end
+abstract type ExternalDeviceIOStream <: IO end
 
 """
-    VariableIOStream
-
-IOStream for VariableIO.
-"""
-abstract type VariableIOStream <: VariableIO end
-
-"""
-    activate(stream::VariableIOStream)
+    activate(stream::ExternalDeviceIOStream)
 
 Activate an stream according to the predefined variables.
 """
 function activate end
 
 """
-    deactivate(stream::VariableIOStream)
+    deactivate(stream::ExternalDeviceIOStream)
 
 Deactivate an stream. The stream is live, but not usable.
 """
@@ -62,24 +48,3 @@ function activate(f::Function, io, args...; kwargs...)
         deactivate(io)
     end
 end
-
-# list of general fucntions before activation
-# Those functions might not implemented
-# You can make your own functions
-
-# timing - at triggering time
-function trigger_mode end
-function trigger_mode! end
-# timting - at action time
-function timing_mode end
-function timing_mode! end
-# intermediate data storage - buffer
-function buffer_mode end
-function buffer_mode! end
-
-# list of general fucntions while activation
-# Those functions might not implemented
-# You can make your own functions
-
-# timing - at triggering time
-function trigger end
